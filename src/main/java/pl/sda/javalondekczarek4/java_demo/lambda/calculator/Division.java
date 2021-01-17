@@ -1,6 +1,6 @@
 package pl.sda.javalondekczarek4.java_demo.lambda.calculator;
 @FunctionalInterface
-public interface Division {
+public interface Division<T> {
 
-    int div(int a, int b);
+    T div(T a, T b);
 }

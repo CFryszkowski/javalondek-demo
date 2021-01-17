@@ -1,6 +1,6 @@
 package pl.sda.javalondekczarek4.java_demo.lambda.calculator;
 
 @FunctionalInterface
-public interface Adder {
-    int add (int first, int second);
+public interface Adder<T> {
+    T add (T first, T second);
 }

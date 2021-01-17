@@ -1,6 +1,6 @@
 package pl.sda.javalondekczarek4.java_demo.lambda.calculator;
 @FunctionalInterface
-public interface Multi {
+public interface Multi<T>{
 
-    int multi(int a, int b);
+    T multi(T a, T b);
 }
