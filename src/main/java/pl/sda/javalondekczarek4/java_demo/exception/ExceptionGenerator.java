@@ -4,19 +4,19 @@ import java.util.Random;
 
 public class ExceptionGenerator {
 
-    public String nick() throws NoNickException {
+    public String nick() throws NoNickCheckedException {
         Random random = new Random();
         if (random.nextInt(100) % 2 == 0) {
             return "maniek";
         } else {
-            throw new NoNickException("I have no nick... yet:P");
+            throw new NoNickCheckedException("I have no nick... yet:P");
         }
     }
     public String nickv2() {
         String myNick;
         try { // first step
             myNick = nick();
-        } catch (NoNickException e) { // second - sometimes
+        } catch (NoNickCheckedException e) { // second - sometimes
             System.out.println("Problem with nick generator...");
             myNick = "this user has no nick";
         } finally { // third // always
@@ -25,15 +25,15 @@ public class ExceptionGenerator {
         return myNick;
     }
     /**
-     * @throws NoNickException
+     * @throws NoNickCheckedException
      * @return
      */
-    public String nickWithRuntimeException() throws NoNickRuntimeException {
+    public String nickWithRuntimeException() throws NoNickRuntimeExc {
         Random random = new Random();
         if (random.nextInt(100) % 2 == 0) {
             return "maniek";
         } else {
-            throw new NoNickRuntimeException("I have no nick... yet:P");
+            throw new NoNickRuntimeExc("I have no nick... yet:P");
         }
     }
 }
