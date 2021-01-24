@@ -1,5 +1,7 @@
 package pl.sda.javalondekczarek4.java_demo.optional.java7;
 
+import java.util.Optional;
+
 public class ComputerUtils {
     private ComputerUtils() {
         throw new UnsupportedOperationException("This class shouldn't be instantiated!!!");
@@ -28,6 +30,14 @@ public class ComputerUtils {
         }
         return result;
     }
+
+    public static String getGCModelWhithJava8(Computer computer){
+       return Optional.ofNullable(computer)
+                .map(comp->comp.getGraphicsCard())
+                .map(graphicsCard -> graphicsCard.getModel())
+                .orElse("no model");
+    }
+
         public static void main (String[]args){
             Computer withoutGraphicsCard = new Computer(null);
             Computer withUnknownModel = new Computer(new GraphicsCard(null));
