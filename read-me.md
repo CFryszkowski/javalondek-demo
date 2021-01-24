@@ -5,6 +5,8 @@ Git - good practices
 * zmiana opisu tylko dla ostatiego commita (amend)
 * podrozuj po histori i branchach tylko przy czystym dzrzewie roboczym
 * zmergowany branch mozna usunac  
+* fast forward nie zawsze jest mozliwy - dziala tylko w przypadku gdy jeden branch moze "dogonic" drugi
+* zawsze mozna wymusic commit mergujacy
 
 
 Git - przydatne komendy
