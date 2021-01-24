@@ -6,7 +6,7 @@ Git - good practices
 * podrozuj po histori i branchach tylko przy czystym dzrzewie roboczym
 * usuwanie branchy  
     * zmergowany branch mozna usunac
-    * nie powinnismy usuwac nie zmergowanych branch'y 
+    * nie powinnismy usuwac nie zmergowanych branch'y bo nie bedziemy wstanie wrocic do nich
     * nie usuwamy branchy na ktorych sie znajdujemy
 * git flow - w skrocie
     * master - branch release-owy
