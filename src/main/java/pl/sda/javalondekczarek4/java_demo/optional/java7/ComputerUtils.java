@@ -7,7 +7,9 @@ public class ComputerUtils {
         throw new UnsupportedOperationException("This class shouldn't be instantiated!!!");
     }
     public static String getGraphicsCardModelFirstNaiveApproach(Computer computer) {
-        return computer.getGraphicsCard().getModel();
+        return computer                 //Computer
+                .getGraphicsCard()      //GraphicsCard
+                .getModel();            //String
     }
     public static String getGraphicCardModelGoodApproach(Computer computer) {
 //        if (computer.getGraphicsCard() == null) {
@@ -36,6 +38,12 @@ public class ComputerUtils {
                 .map(comp->comp.getGraphicsCard())
                 .map(graphicsCard -> graphicsCard.getModel())
                 .orElse("no model");
+    }
+
+    public static String getGCModelWhithJava8WithVar(Computer computer){
+
+        //FIXME
+        return "";
     }
 
         public static void main (String[]args){

@@ -4,7 +4,7 @@ Git - good practices
 * commit powinen miec jedna zmiane
 * zmiana opisu tylko dla ostatiego commita (amend)
 * podrozuj po histori i branchach tylko przy czystym dzrzewie roboczym
-* usuwanie branchy  
+* usuwanie branchy
     * zmergowany branch mozna usunac
     * nie powinnismy usuwac nie zmergowanych branch'y bo nie bedziemy wstanie wrocic do nich
     * nie usuwamy branchy na ktorych sie znajdujemy
@@ -13,13 +13,15 @@ Git - good practices
     * develop - branch developerski
     * feature branch - branch do rozwoju funkcjonalnosci
     * feature branch - powinien startowac od developa i do niego finalnie zostac zmergowany
-
+      *branch
+      *Wlasny branch nie musi  byc idealny(moze nie dzialac, moze zawierac FIXME/TODO),
+      ale wyslanie maege requesta z tego brancha musi zawierac piekny kod
 
 Git - przydatne komendy
-git status
+git status 
 git add .
 git commit -m "[tag] - message"
-git restore --staged file-name// zdejmij ze stage'a
-git checkout branch-name // przelacz sie na branch-name
-git checkout -b branch-name // przelacz na nowo utworzony branch
+git restore --staged file-name// 
+zdejmij ze stage'a git checkout branch-name // przelacz sie na branch-name git checkout
+-b branch-name // przelacz na nowo utworzony branch 
 git log --graph // rysujegraf historii w konsoli
